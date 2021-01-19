@@ -37,5 +37,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Instalando o npm i ngx-bootstrap
 
-npm i ngx-bootstrap
-<code>npm i</code>
+<code>npm i ngx-bootstrap</code>
