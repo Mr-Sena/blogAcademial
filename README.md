@@ -34,7 +34,7 @@ npm i
 
 ## Instalando o ngx-order-pipe
 
-npm i ngx-order-pipe
+<code>npm i ngx-order-pipe</code>
 
 ## Instalando o npm i ngx-bootstrap
 
