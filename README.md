@@ -29,8 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Instale o pacote node:
 
-npm i
-
+<code>npm i</code>
 
 ## Instalando o ngx-order-pipe
 
@@ -39,3 +38,4 @@ npm i
 ## Instalando o npm i ngx-bootstrap
 
 npm i ngx-bootstrap
+<code>npm i</code>
