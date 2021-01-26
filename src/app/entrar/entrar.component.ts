@@ -30,10 +30,20 @@ export class EntrarComponent implements OnInit {
       this.userLogin = resp
 
       //Variável definida com o escopo global na pasta Environment(blogPersonal/src/environments/environment.prod)
-      environment.token = this.userLogin.toker
+      environment.token = this.userLogin.token
       environment.nome = this.userLogin.nome
       environment.foto = this.userLogin.foto
-      environment.id = this.userLogin.idUsuario
+      environment.id = this.userLogin.id
+
+      console.log(environment.token)
+
+      console.log(environment.nome)
+
+      console.log(environment.foto)
+
+      console.log(environment.id)
+
+
 
       this.router.navigate(['/inicio'])
     }, erro =>{

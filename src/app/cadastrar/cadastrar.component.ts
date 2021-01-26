@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from '../model/User';
+//import { UserLogin } from '../model/UserLogin';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -9,13 +10,13 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['./cadastrar.component.css']
 })
 export class CadastrarComponent implements OnInit {
-  //Variáveis são declaradas sempre emcima dos construtores
+  //Variáveis são declaradas sempre acima dos construtores
   user: User = new User
   confirmarSenha: string
   tipoUsuario: string
 
-  constructor(
-    private authService: AuthService, // Uma injeção de dependências
+  constructor( // todo que fica no construtor é uma injeção de dependência
+    private authService: AuthService,
     private router: Router // Injeção para dependência do roteamento interno
   ) { }
 
@@ -35,7 +36,7 @@ export class CadastrarComponent implements OnInit {
     this.user.tipo = this.tipoUsuario
 
     if(this.user.senha != this.confirmarSenha) {
-      alert('Senha incompatíveis!')
+      alert('Senhas incompatíveis!')
     } else {
       this.authService.cadastrar(this.user).subscribe((resp: User) => {
         this.user = resp

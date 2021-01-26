@@ -1,9 +1,9 @@
 export class UserLogin{
-    public idUsuario: number
+    public id: number
     public nome: string
-    public usuario: string
+    public userName: string
     public senha: string
-    public toker: string
+    public token: string
     public foto: string
     public tipo: string
 }
