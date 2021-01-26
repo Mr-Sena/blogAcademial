@@ -2,6 +2,10 @@
 <!--    <app-cadastrar></app-cadastrar>    -->
 
 <!-- Configutando uma página dinámica para se comportar com conforme as rotas-->
-  
+
+
+<app-menu *ngIf='auth.logado()'></app-menu>
 
 <router-outlet></router-outlet>
+
+<app-rodape *ngIf='auth.logado()'></app-rodape>
