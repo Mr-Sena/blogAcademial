@@ -23,7 +23,7 @@ export class AuthService {
   }
 
   logado() {
-    //let ok = false    Método convencional, abaixo temos a definição com tipagem (graças ao TypeScript)
+    //let ok = false    Método convencional, abaixo temos a definição com tipagem (exclusivdade do TypeScript)
     let ok: boolean = false
 
     if (environment.token != '') {
