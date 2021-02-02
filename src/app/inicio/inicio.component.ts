@@ -36,7 +36,7 @@ export class InicioComponent implements OnInit {
 
 
     if(environment.token == ''){
-      alert('Sua seção expirou. Faça o login novamente.')
+      //alert('Sua seção expirou. Faça o login novamente.')
       this.router.navigate(['/entrar'])
     }
 
@@ -65,7 +65,7 @@ export class InicioComponent implements OnInit {
 
 
   findByIdUser() {
-    this.authService.getByIdUser(this.idUser).subscribe((resp: User) => {
+    this.postagemService.getByIdUser(this.idUser).subscribe((resp: User) => {
       this.user = resp
     })
 
