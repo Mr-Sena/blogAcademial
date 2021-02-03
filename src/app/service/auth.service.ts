@@ -27,8 +27,6 @@ export class AuthService {
   }
 
   
-
-
   logado() {
     //let ok = false    Método convencional, abaixo temos a definição com tipagem (exclusivdade do TypeScript)
     let ok: boolean = false

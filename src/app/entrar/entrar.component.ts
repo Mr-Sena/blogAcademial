@@ -13,7 +13,7 @@ export class EntrarComponent implements OnInit {
 
   userLogin: UserLogin = new UserLogin()
 
-  
+
 
   constructor(
     private auth: AuthService,
@@ -31,6 +31,7 @@ export class EntrarComponent implements OnInit {
       //Variável definida com o escopo global na pasta Environment(blogPersonal/src/environments/environment.prod)
       environment.token = this.userLogin.token
       environment.nome = this.userLogin.nome
+      //environment.userName = this.userLogin.userName → Desnecessário
       environment.foto = this.userLogin.foto
       environment.id = this.userLogin.id
       environment.tipo = this.userLogin.tipo
@@ -42,7 +43,5 @@ export class EntrarComponent implements OnInit {
         alert('Usuário ou senha estão incorretos!')
       }
     })
-
   }
-
 }

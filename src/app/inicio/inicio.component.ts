@@ -85,8 +85,8 @@ export class InicioComponent implements OnInit {
       this.postagem = new Postagem()
       this.getAllTema()
       alert('Postagem realizada com sucesso!')
+      this.postagem = new Postagem()
+      this.getAllPostagens()
     })
-
   }
-
 }

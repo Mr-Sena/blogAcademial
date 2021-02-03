@@ -20,9 +20,9 @@ export class TemaEditComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    if(environment.token = '') {
-      this.router.navigate(['/entrar'])
-    }
+    /*if(environment.token = '') {
+      this.router.navigate( ['/entrar'] )
+    }*/
 
     let id = this.route.snapshot.params['id']
     this.findByIdTema(id)
@@ -38,9 +38,8 @@ export class TemaEditComponent implements OnInit {
   atualizar(){
     this.temaService.putTema(this.tema).subscribe((resp: Tema) =>{
       this.tema = resp
+      this.router.navigate( ['/tema'] )
       alert('Tema atualizado com sucesso!')
-      this.router.navigate(['/#/tema'])
     })
   }
-
 }

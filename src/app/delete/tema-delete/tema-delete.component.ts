@@ -21,9 +21,9 @@ export class TemaDeleteComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    if(environment.token = '') {
+    /*if(environment.token = '') {
       this.router.navigate(['/entrar'])
-    }
+    }*/
 
     this.idTema = this.route.snapshot.params['id']
     this.findByIdTema(this.idTema)
@@ -41,5 +41,4 @@ export class TemaDeleteComponent implements OnInit {
       this.router.navigate(['/tema'])
     })
   }
-
 }

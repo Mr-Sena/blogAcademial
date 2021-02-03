@@ -19,7 +19,7 @@ const routes: Routes = [
   {path: 'inicio', component: InicioComponent},
   {path: 'tema', component: TemaComponent},
 
-  {path: 'tema-edit/:id', component: TemaEditComponent}, // Passando parâmetro por rota no angular em <:id>
+  {path: 'tema-edit/:id', component: TemaEditComponent}, // Passando rota por parâmetro no angular, em <:id>
   {path: 'tema-delete/:id', component: TemaDeleteComponent},
   {path: 'postagem-edit/:id', component: PostagemEditComponent},
   {path: 'postagem-delete/:id', component: PostagemDeleteComponent}
